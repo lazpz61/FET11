@@ -1,0 +1,51 @@
+/* Element Selector */
+span {
+    color: red;
+    background-color: blanchedalmond;
+    font-size: 20px;
+}
+
+/* Class Selector */
+
+.intro-paragraphs {
+    color: tomato;
+    text-decoration: underline dashed;
+
+}
+
+#main-heading {
+    font-weight: bold;
+    font-style: italic;
+    color:rebeccapurple;
+    background-color: antiquewhite;
+}
+
+/* Universla Selector */
+* {
+font-family: Verdana, sans-serif;
+}
+
+h1, h2 .about-content {
+    background-color: tomato;
+    color:white;
+    text-align: center;
+}
+
+/* Accessing the parent first and then get to the child - Decendant Selector */
+.article-container p{
+    font-weight: bolder;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+/* Pseudo -class */
+a:hover{
+    color:turquoise;
+    text-decoration: line-through dashed tomato;
+}
+
+a:active{
+    color:rosybrown;
+    background-color: tomato;
+}

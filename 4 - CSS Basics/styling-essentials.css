@@ -1,0 +1,83 @@
+#text-styling {
+    font-family: Arial, Helvetica, sans-serif;
+    /* FONT WEIGHT */
+    /* Keyword Values */
+    font-weight: normal;
+    font-weight: lighter;
+    font-weight: bold;
+    font-weight: bolder;
+
+    /*Numeric Values*/
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+
+    /* FONT STYLE */
+    font-style: normal;
+    font-style: italic; 
+    font-style: oblique;
+
+    /* TEXT ALIGNMENT */
+    text-align: left;
+    text-align: justify;
+    text-align: right;
+    text-align: center;
+
+    /* LINE HEIGHT */
+    line-height: normal;
+    line-height: 64px;
+    line-height: 5;
+
+    /* LETTER SPACING */
+    letter-spacing: 4px;
+    letter-spacing: -2px;
+
+}
+
+#text-decoration {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: underline overline line-through;
+    text-decoration: line-through;
+
+    text-decoration: dashed red underline;
+}
+
+
+#colors {
+    /* COLOR NAMES */
+    color: yellow;
+    background-color: tomato;
+
+    /* RGB - [0 - 255] */
+    /* RGBA - [0 - 255], Alpha: [0 - 1] */
+    color: rgb(255, 0, 0);
+    background-color: rgba(0, 255, 0, 0.8);
+
+    /* Hexadecimal */
+    color: #000FFF;
+    background-color: #f1faee;
+}
+
+#absolute-unit-px {
+    font-size: 24px;
+}
+
+#relative-unit-em {
+    /* Look at the parent and consider its font size */
+    font-size: 2em;
+    font-size: 3em;
+}
+
+#relative-unit-rem {
+    /* This will be relative */
+    font-size: 1rem;
+    font-size: 2rem; /* 32px */
+    font-size: 3rem; /* 48px */
+}
