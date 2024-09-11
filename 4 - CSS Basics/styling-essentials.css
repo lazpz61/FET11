@@ -61,6 +61,7 @@
     background-color: rgba(0, 255, 0, 0.8);
 
     /* Hexadecimal */
+    /* 0-9, A-F */
     color: #000FFF;
     background-color: #f1faee;
 }
@@ -71,8 +72,8 @@
 
 #relative-unit-em {
     /* Look at the parent and consider its font size */
-    font-size: 2em;
-    font-size: 3em;
+    font-size: 2em; /*40px  2(20)*/
+    font-size: 3em;  /*60px 3(20)*/
 }
 
 #relative-unit-rem {

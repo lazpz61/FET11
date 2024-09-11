@@ -1,0 +1,41 @@
+#ancestor {
+    position: relative;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  /* RELATIVE */
+/* Relative to its original position. */
+  #relative {
+    background-color: aqua;
+    position: relative;
+    top: 60px;
+  }
+
+ /* ABSOLUTE */
+/* Relative to its parent container */
+/* Parent Container should have a position that is not static */
+#absolute {
+    background-color: tomato;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* It will be removed from the regular document flow */
+/* Relative to the viewport -  which is the size of the browser that is being visualized */
+  #fixed {
+    background-color: rgb(136, 223, 226);
+    color: orange;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+/* STICKY */
+#sticky {
+    background-color: bisque;
+    color: tomato;
+    position: sticky;
+}
