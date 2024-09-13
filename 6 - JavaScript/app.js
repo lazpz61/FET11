@@ -1,89 +1,63 @@
-//Operators and Expressions
+//Arrays
+let fruits = ["Apple","Banana", "Cherry"]
+console.log("Length of Fruits:", fruits.length);
+
+console.log("Fruits:", fruits);
+
+console.log("First Fruit:", fruits[0]);
+console.log("Last Element:", fruits[fruits.length - 1])
+
+// .slice(): access a portion of the array
+// 1st Parameter: starting index
+// 2nd Parameter: element not included
+let slicedFruits = fruits.slice(0, 2);
+console.log("Sliced Fruits:", slicedFruits);
+console.log("Fruits:", fruits);
+
+//Update element
+fruits[0] = "Avocado";
+console.log(fruits)
+
+// Adding new elements
+// .push(): add an element at the end of the array
+fruits.push("Dewberry");
+console.log("Pushing Fruits:", fruits);
+
+// .splice(): add or delete element(s) inside of the array
+// 1st Parameter: starting index
+// 2nd Parameter: delete count
+// 3rd Parameter: element(s) you want to add
+fruits.splice(2, 0, "Mango");
+console.log("Splicing Fruits:", fruits);
+
+// Delete element(s)
+// .pop(): delete an element at the end of the array
+fruits.pop();
+console.log("Pop Fruits:", fruits);
+
+// .splice(): add or delete element(s) inside of the array
+// 1st Parameter: starting index
+// 2nd Parameter: delete count
+// 3rd Parameter: element(s) you want to add
+fruits.splice(2,1);
+console.log("Splicing a specific Fruit:", fruits);
+
+//Searching element(s)
+// .includes(element): check if an element exists inside the array.
+console.log("Is Banana included",fruits.includes("Banana"));
 
 
-// Operators and Expressions
-// Arithmetic Operators
-let num1 = 10;
-let num2 = 5;
-console.log("Addition (+):", num1 + num2);
-console.log("Subtraction (-):", num1 - num2);
-console.log("Multiplication (*):", num1 * num2);
-console.log("Division (/):", num1 / num2);
 
+// .indexOf(element): find the index of an element
+let indexOfBanana = fruits.indexOf("Banana");
+console.log("Index of Banana:", indexOfBanana);
+let indexOfMango = fruits.indexOf("Mango");
+console.log("Index of Mango:", indexOfMango);
 
-console.log("Exponent (**):", num1 ** num2);
-console.log("Remainder (%):", num1 % 6);
-
-// Order of Operations
-// PEMDAS/BODMAS
-const answer = 3 + 4 * (5 - 2) ** 2 / 2;
-console.log("Answer:", answer);
-
-// 2. String Expressions or Concatenation
-let greeting = "Hi";
-let name = "John";
-console.log(greeting + " " + name);
-
-// 3. Comparison Operators
-// type coersion: converts the data type if necessary
-console.log("Equal to (==):", num1 == 10);
-console.log("Equal to (==):", num1 == "10");
-
-
-console.log("Not Equal to (==):", num1 != 10);
-console.log("Not Equal to (==):", num1 != "10");
-
-
-console.log("Strictly Equal to (==):", num1 === 10);
-console.log("Strictly Equal to (==):", num1 === "10");
-
-console.log("Strictly Not Equal to (==):", num1 !== 10);
-console.log("Strictly Not Equal to (==):", num1 !== "10");
-
-console.log("Greater Than (>):", 10 > 5);
-console.log("Less Than (<):", 5 < 10);
-console.log("Greater Than or Equal to (>=):", 10 >= 10);
-console.log("Less Than or Equal to (<=):", 9 <= 10);
-
-// 4. Logical Operators
-// AND, OR, NOT
-// &&, ||, !
-let sunny = true;
-let warm = true;
-
-// AND: true if all the variables is set to true, otherwise false
-console.log("Is it sunny AND warm?", sunny && warm);
-
-// NOT: Invert the value of a boolean
-console.log("NOT sunny?", !sunny);
-
-
-// 5. Assignment Expressions
-// Single Equal Sign (=): assigning a value to a variable.
-let num3 = 10;
-let num4 = 5;
-
-// Addition Assignment (+=)
-// num3 = num3 + num4
-num3 +=num4
-console.log("The new value of num3:", num3)
-//Computation: 10+ 5 = 15
-
-// Subtraction Assignment (-=)
-num3 -= num4
-console.log("The new value of num3:", num3);
-// Computation: 15 - 5 = 10
-
-// Multiplication Assignment (*=)
-num3 *= num4
-console.log("The new value of num3:", num3);
-// Computation: 10 * 5 = 50
-
-
-// Division Assignment (/=)
-num3 /= num4
-console.log("The new value of num3:", num3);
-// Computation: 50/ 5 = 10
+// .forEach(): execute a function to each of the element of the array
+fruits.forEach(function (fruit){
+    console.log("Fruit:", fruit);
+})
 
 
 
@@ -91,17 +65,12 @@ console.log("The new value of num3:", num3);
 
 
 
+// let veggies = ["Carrot","Lettuce"]
+// fruits.forEach(element => {
+//     element.toUpperCase
+// });
+// console.log(fruits)
 
+// let methodTestConcat = fruits.concat(veggies)
 
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(methodTestConcat)
